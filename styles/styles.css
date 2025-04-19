@@ -1,0 +1,45 @@
+:root {
+    /* Colors */
+    --white: #FFFFFF;
+    --grey: #949494;
+    --blue: #242742;
+    --red: #FF6155;
+    --gradient-start: #FF6A3A;
+    --gradient-end: #FF527B;
+
+    /* Spacing */
+    --spacing-100: 0.8rem;
+    --spacing-200: 1.6rem;
+    --spacing-300: 2.4rem;
+    --spacing-400: 3.2rem;
+    --spacing-500: 4rem;
+    --spacing-600: 4.8rem;
+    --spacing-800: 6.4rem;
+    --spacing-900: 7.2rem;
+    --spacing-1300: 10.4rem;
+
+    /* Typography */
+    --fs-preset-1: 5.6rem;
+    --fs-preset-1-mobile: 8.8rem;
+    --fs-preset-2: 1.6rem;
+    --fs-preset-3: 1.2rem;
+
+    --lh-preset-1: 100%;
+    --lh-preset-2-3: 150%;
+
+    --ls-global: 0px;
+
+    --bold: 700;
+    --regular: 400;
+}
+
+/* Setting base rem value = 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--fs-preset-2);
+    font-weight: var(--regular);
+}
