@@ -16,35 +16,38 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message | Chris Flores</title>
 </head>
 <body>
-	<main>
-
+	<main class="signup-component">
+		<div class="signup__info">
+			<h1 class="signup__info-header preset-1">Stay updated!</h1>
+			<p class="signup__info-text preset-2">Join 60,000+ product managers receiving monthly updates on:</p>
+			<ul class="signup__info-list preset-2">
+				<li class="signup__info-list-el">Product discovery and building what matters</li>
+				<li class="signup__info-list-el">Measuring to ensure updates are a success</li>
+				<li class="signup__info-list-el">And much more!</li>
+			</ul>
+			<form class="signup__info-form">
+				<div>
+					<label class="signup__info-label preset-3" for="input-email">Email addres</label>
+					<input class="signup__info-input" id="input-email" type="email" placeholder="email@company.com">
+				</div>
+				<button class="signup__info-submit" type="submit">Subscribe to monthly newsletter</button>
+			</form>
+		</div>
+		<div class="signup__image-container">
+			<img class="img-desktop" src="img/illustration-sign-up-desktop.svg" alt="A picture showing an orange set of mockups of windows">
+			<img class="img-mobile" src="img/illustration-sign-up-mobile.svg" alt="A picture showing an orange set of mockups of windows">
+		</div>
 	</main>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
 
-  Thanks for subscribing!
+<!--  Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  Dismiss message-->
 
   <!-- Success message end -->
   
