@@ -44,6 +44,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: var(--spacing-400);
     font-family: "Roboto", sans-serif;
     font-size: var(--fs-preset-2);
     font-weight: var(--regular);
@@ -129,9 +130,10 @@ body {
     border: 1px solid var(--grey);
 }
 
-.signup__info-submit {
+.btn {
     padding: var(--spacing-200) var(--spacing-600);
     border: none;
+    width: 100%;
     color: var(--white);
     font-weight: var(--bold);
     background-color: var(--blue);
@@ -139,7 +141,7 @@ body {
     transition: all 0.3s;
 }
 
-.signup__info-submit:hover {
+.btn:hover {
     cursor: pointer;
     transform: translateY(-8px);
 }
@@ -155,6 +157,26 @@ body {
     line-height: var(--lh-preset-2-3);
 }
 
+/* Interactivity classes */
+.hidden {
+    display: none;
+}
+
+/* ============== Success component ============== */
+.success-component {
+    max-width: 504px;
+    padding: var(--spacing-800);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-400);
+    background-color: var(--white);
+}
+
+.user-email {
+    font-weight: var(--bold);
+}
 @media (max-width: 57rem) {
     html {
         font-size: 50%;
@@ -220,4 +242,15 @@ body {
     .signup__info {
         padding: var(--spacing-500) var(--spacing-200);
     }
+
+    .success-component {
+        height: 100vh;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    .dismiss-btn {
+        margin-top: auto;
+    }
+
 }
