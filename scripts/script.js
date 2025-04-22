@@ -31,12 +31,7 @@ function init() {
 function formListener(e) {
 	e.preventDefault();
 
-	if (inputEmail.validity.valueMissing) {
-		inputEmail.setCustomValidity("Please enter an email address here");
-	}
-
 	components.forEach(component => component.classList.toggle('hidden'));
-
 	userEmailTxt.textContent = inputEmail.value;
 
 	/* Reset to default state */
