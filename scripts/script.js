@@ -19,12 +19,22 @@ function init() {
 	form.addEventListener('submit', formListener);
 	dismissButton.addEventListener('click', formListener);
 	inputEmail.addEventListener('input', emailValidationListener);
+
+	/* Set initial empty value error */
+	if (inputEmail.validity.valueMissing) {
+		inputEmail.setCustomValidity("Please enter an email address here");
+	}
 }
 
 
 /* ================= Listener callbacks ================= */
 function formListener(e) {
 	e.preventDefault();
+
+	if (inputEmail.validity.valueMissing) {
+		inputEmail.setCustomValidity("Please enter an email address here");
+	}
+
 	components.forEach(component => component.classList.toggle('hidden'));
 
 	userEmailTxt.textContent = inputEmail.value;
@@ -36,6 +46,13 @@ function formListener(e) {
 
 function emailValidationListener(e) {
 	e.preventDefault();
+
+	if (inputEmail.validity.valueMissing) {
+		inputEmail.setCustomValidity("Please enter an email address here");
+	} else {
+		inputEmail.setCustomValidity(inputEmail.validity.typeMismatch ? "Input a valid email address" : "");
+	}
+
 	if (inputEmail.checkValidity()) {
 		subscribeButton.classList.add('valid-data');
 	} else {
