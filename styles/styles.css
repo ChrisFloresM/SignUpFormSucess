@@ -2,8 +2,10 @@
     /* Colors */
     --white: #FFFFFF;
     --grey: #949494;
-    --blue: #242742;
-    --red: #FF6155;
+    --blue: rgba(36, 39, 66);
+    --blue-light: rgba(36, 39, 66, 0.5);
+    --red: rgba(255, 97, 85);
+    --red-light: rgba(255, 97, 85, 0.5);
     --gradient-start: #FF6A3A;
     --gradient-end: #FF527B;
 
@@ -130,6 +132,15 @@ body {
     border: 1px solid var(--grey);
 }
 
+.signup__info-input:focus {
+    outline: none;
+    border: 1px solid var(--red);
+}
+
+.signup__info-input:invalid:focus {
+    background-color: var(--red-light);
+}
+
 .btn {
     padding: var(--spacing-200) var(--spacing-600);
     border: none;
@@ -146,6 +157,10 @@ body {
     transform: translateY(-8px);
 }
 
+.btn.valid-data {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
 /* General styles */
 .preset-1 {
     font-size: var(--fs-preset-1);
@@ -157,13 +172,9 @@ body {
     line-height: var(--lh-preset-2-3);
 }
 
-/* Interactivity classes */
-.hidden {
-    display: none;
-}
-
 /* ============== Success component ============== */
 .success-component {
+
     max-width: 504px;
     padding: var(--spacing-800);
     border-radius: 32px;
@@ -177,6 +188,12 @@ body {
 .user-email {
     font-weight: var(--bold);
 }
+
+/* Interactivity classes */
+.signup-component.hidden,  .success-component.hidden{
+    display: none;
+}
+
 @media (max-width: 57rem) {
     html {
         font-size: 50%;

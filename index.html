@@ -13,11 +13,14 @@
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+	<!-- Scripts -->
+	<script defer src="scripts/script.js"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message | Chris Flores</title>
 </head>
 <body>
 	<main class="main-component">
-		<div class="signup-component hidden">
+		<div class="signup-component component">
 			<div class="signup__info">
 				<h1 class="signup__info-header preset-1">Stay updated!</h1>
 				<p class="signup__info-text preset-2">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -29,7 +32,7 @@
 				<form class="signup__info-form">
 					<div>
 						<label class="signup__info-label preset-3" for="input-email">Email addres</label>
-						<input class="signup__info-input" id="input-email" type="email" placeholder="email@company.com">
+						<input class="signup__info-input" id="input-email" type="email" placeholder="email@company.com" required>
 					</div>
 					<button class="signup__info-submit btn" type="submit">Subscribe to monthly newsletter</button>
 				</form>
@@ -45,10 +48,10 @@
 				>
 			</div>
 		</div>
-		<div class="success-component">
+		<div class="success-component component hidden">
 			<img src="img/icon-success.svg" alt="A success icon with orange background">
 			<h2 class="preset-1">Thanks for subscribing!</h2>
-			<p class="preset-2">A confirmation has been sent to <span class="user-email">cfloresh191@gmail.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+			<p class="preset-2">A confirmation has been sent to <span class="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
 			<button class="dismiss-btn btn">Dismiss message</button>
 		</div>
 	</main>
