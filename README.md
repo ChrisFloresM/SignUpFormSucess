@@ -8,15 +8,13 @@ Usage of:
 - Javascript
 
 ## **Desktop preview:**
-![desktop version preview](https://github.com/ChrisFloresM/ArticlePreviewComponent/blob/master/final/desktop.png)
+![desktop version preview](https://github.com/ChrisFloresM/SignUpFormSucess/tree/master/final/desktop.png)
 
 ## **Mobile preview:**
-![Mobile version preview](https://github.com/ChrisFloresM/ArticlePreviewComponent/blob/master/final/mobile.png).
+![Mobile version preview](https://github.com/ChrisFloresM/SignUpFormSucess/tree/master/final/mobile.png).
 
 ## Links
-
-- Solution URL: [Add solution URL here](https://github.com/ChrisFloresM/SignUpFormSucess)
-- Live Site URL: [Add live site URL here](https://cf-formsuccess.netlify.app/)
+- Live Site URL: [Sing Up Form with validation](https://cf-formsuccess.netlify.app/)
 
 # My process
 
