@@ -161,6 +161,43 @@ body {
     background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
 }
 
+/* Error message bubble */
+.signup__info-input-container {
+    position: relative;
+}
+
+.signup__info-email-error {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    padding: var(--spacing-100);
+    border-radius: 5px;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--red);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.signup__info-email-error::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    transform: translate(-50%, 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.hidden-error {
+    left: -10000px;
+}
+
+.fade-in {
+    opacity: 1;
+}
 /* General styles */
 .preset-1 {
     font-size: var(--fs-preset-1);
@@ -190,7 +227,7 @@ body {
 }
 
 /* Interactivity classes */
-.signup-component.hidden,  .success-component.hidden{
+.hidden {
     display: none;
 }
 

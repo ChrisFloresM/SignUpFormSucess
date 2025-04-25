@@ -29,11 +29,11 @@
 					<li class="signup__info-list-el">Measuring to ensure updates are a success</li>
 					<li class="signup__info-list-el">And much more!</li>
 				</ul>
-				<form class="signup__info-form">
-					<div>
+				<form class="signup__info-form" novalidate>
+					<div class="signup__info-input-container">
 						<label class="signup__info-label preset-3" for="input-email">Email addres</label>
 						<input class="signup__info-input" id="input-email" type="email" placeholder="email@company.com" required>
-						<span class="email error" aria-live="polite"></span>
+						<span class="signup__info-email-error preset-3 hidden-error" aria-live="polite">An email is required!</span>
 					</div>
 					<button class="signup__info-submit btn" type="submit">Subscribe to monthly newsletter</button>
 				</form>
@@ -56,19 +56,6 @@
 			<button class="dismiss-btn btn">Dismiss message</button>
 		</div>
 	</main>
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-<!--  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message-->
-
-  <!-- Success message end -->
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/ChrisFloresM">Chris Flores</a>.
