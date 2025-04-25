@@ -8,10 +8,10 @@ Usage of:
 - Javascript
 
 ## **Desktop preview:**
-![Desktop Version Preview](https://github.com/ChrisFloresM/SignUpFormSucess/tree/master/final/desktop.png)
+![Desktop Version Preview](/final/desktop.png)
 
 ## **Mobile preview:**
-![Mobile Version Preview](https://github.com/ChrisFloresM/SignUpFormSucess/tree/master/final/mobile.png).
+![Mobile Version Preview](/final/mobile.png)
 
 ## Links
 - Live Site URL: [Sing Up Form with validation](https://cf-formsuccess.netlify.app/)
