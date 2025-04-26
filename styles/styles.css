@@ -169,7 +169,7 @@ body {
 .signup__info-email-error {
     position: absolute;
     top: -50%;
-    left: 50%;
+    left: 35%;
     padding: var(--spacing-100);
     border-radius: 5px;
     white-space: nowrap;
@@ -211,7 +211,6 @@ body {
 
 /* ============== Success component ============== */
 .success-component {
-
     max-width: 504px;
     padding: var(--spacing-800);
     border-radius: 32px;
